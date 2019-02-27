@@ -1,0 +1,28 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+class {{ module_info.name }}Presenter {
+
+    weak var view: {{ module_info.name }}ViewInterface!
+    var interactor: {{ module_info.name }}InteractorInterface!
+    var router: {{ module_info.name }}RouterInterface!
+
+    
+}
+
+// MARK: - Implementing Interface for Module setting from outside during creating
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInputInterface {
+	
+}
+
+// MARK: - Implementing Interface for View
+extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterInterface {
+	func viewIsReady() {
+
+    }
+}
